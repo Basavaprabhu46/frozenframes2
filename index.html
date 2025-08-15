@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basava • Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zM7 8h10v8H7z" fill="currentColor" /></svg>
+          <span>Basava • Portfolio</span>
+        </div>
+        <nav class="nav">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button id="themeToggle" class="btn icon-btn" aria-label="Toggle theme">
+            <span id="themeIcon">🌙</span>
+          </button>
+          <a class="btn secondary hide-sm" href="/Basava-Portfolio.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="headline">FROZEN FRAMES</h1>
+          <p class="lead">
+             Hi, I'm BASAVA PRABHU, a B.Tech Computer Science student with a passion for blending technology and creativity. Alongside my engineering studies, I'm an avid photographer, capturing cool, unique shots that tell stories through my lens. I'm also part of the Pixelloid club in PES college, where I get to pursue my love for photography.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#work">View Work</a>
+            <a class="btn outline" href="#contact">Book a Shoot</a>    
+          </div>
+        </div>
+        <div class="hero-collage">
+          <div class="frame">
+            <div class="collage">
+              <div class="tile portrait">
+                <img src="images/potrait/1.webp" alt="hero portrait" />
+              </div>
+              <div class="tile landscape">
+                <img src="images/landscape/6.webp" alt="farm landscape" />
+              </div>
+              <div class="tile potrait">
+                <img src="images/potrait/3.webp" alt="hero square" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <section id="work" class="container controls">
+      <div class="filter-row">
+        <span class="muted small">Filter:</span>
+        <div class="btn-group">
+          <button class="btn" data-filter="all">All</button>
+          <button class="btn outline" data-filter="portrait">Portrait 3×4</button>
+          <button class="btn outline" data-filter="landscape">Landscape</button>
+        </div>
+        <div class="search-wrap">
+          <span class="search-icon">🔎</span>
+          <input id="searchInput" type="search" placeholder="Search title, tag, location" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Dropzone -->
+    <!-- <section class="container">
+      <div id="dropzone" class="dropzone">
+        <div class="dz-inner">
+          <span class="icon">🖼️</span>
+          <span>Drag & drop images to preview instantly</span>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Masonry Gallery -->
+    <section class="container">
+      <div id="gallery" class="masonry" aria-live="polite"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container grid-2 gap-lg pad-y-lg">
+      <article class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <span class="icon">ℹ️</span>
+            <h2>About Basava</h2>
+          </div>
+          <p class="muted">
+            Showcasing the beauty of the world through the lens.
+Capture Moments, Share Stories.
+          </p><br><a class="btn secondary hide-sm" href="/Basava-Portfolio.pdf" download>Download Resume</a>
+        </div>
+      </article>
+      <aside class="card">
+        <div class="card-body">
+          <h3 class="small bold m-b-8">Services</h3>
+          <ul class="muted">
+            <li>Portrait Sessions</li>
+            <li>Brand & Editorial Shoots</li>
+            <li>Event & Campus Stories</li>
+            <li>Fine-art Prints</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container pad-y-lg">
+      <article class="card">
+        <div class="card-body">
+          <div class="grid-2 gap-lg align-center">
+            <div>
+              <h2 class="m-b-8">Let’s create something striking.</h2>
+              <p class="muted m-b-12">Tell me about your idea—portraits, campaigns, or prints.</p>
+              <div class="row gap-sm wrap">
+                <a class="btn" href="mailto:frozenframes46@gmail.com">Email Me</a>
+                <a class="btn outline" target="_blank" rel="noreferrer" href="https://www.instagram.com/basava_prabhu_46">Instagram</a>
+                <a class="btn outline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/basavaprabhu046">Linkedin</a>
+              </div>
+            </div>
+            <form class="stack gap-sm" action="mailto:hello@basava.photo" method="post" enctype="text/plain">
+              <input required name="name" placeholder="Your name" />
+              <input required name="email" type="email" placeholder="Email" />
+              <input name="subject" placeholder="Subject" />
+              <textarea name="message" rows="4" placeholder="Message"></textarea>
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container row between wrap small muted">
+        <div>© <span id="year"></span> Basava. All rights reserved.</div>
+        <a class="link" href="#work">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" hidden>
+      <button class="lb-btn close" aria-label="Close (Esc)">✕</button>
+      <button class="lb-btn prev" aria-label="Previous (←)">❮</button>
+      <button class="lb-btn next" aria-label="Next (→)">❯</button>
+
+      <figure class="lb-figure">
+        <img id="lbImage" alt="" />
+        <figcaption id="lbCaption">
+          <div class="lb-title"></div>
+          <div class="lb-meta small">
+            <span class="lb-location"></span> •
+            <span class="lb-orientation"></span>
+          </div>
+          <div class="lb-exif tiny muted"></div>
+          <div class="lb-tags tiny"></div>
+        </figcaption>
+      </figure>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
