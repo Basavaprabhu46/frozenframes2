@@ -125,7 +125,7 @@ const GALLERY = [
     exif: { camera: "—", lens: "—", iso: 800, f: "f/5.6", speed: "1/10" },
   },{
     id: "l2",
-    src: "images/potrait/14.webp",
+    src: "images/potrait/69.webp",
     width: 2200, height: 1467,
     title: "",
     orientation: "portrait",
