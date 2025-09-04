@@ -127,10 +127,10 @@ const GALLERY = [
     id: "l2",
     src: "images/potrait/69.webp",
     width: 2200, height: 1467,
-    title: "",
+    title: "Street",
     orientation: "portrait",
     tags: ["city", "night"],
-    location: "Yamnotri",
+    location: "Bengalore",
     exif: { camera: "—", lens: "—", iso: 800, f: "f/5.6", speed: "1/10" },
   },{
     id: "l2",
